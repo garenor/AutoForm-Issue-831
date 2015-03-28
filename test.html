@@ -1,0 +1,22 @@
+<head>
+  <title>test</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+
+  {{#autoForm schema="testSchema" id="testForm"}}
+  <fieldset>
+      {{> afQuickField name="name"}}
+      <button type="submit" id="btnTest" class=""> test </button>
+  </fieldset>
+  {{/autoForm}}
+
+</template>
